@@ -1,7 +1,10 @@
 # PyAno
+
 All about pianos and music theory
 
+## Project folder structure
 
+``` bash
 PyAno
 |   .gitattributes
 |   .gitignore
@@ -107,3 +110,11 @@ PyAno
 |           __init__.py
 |           
 \---venv
+```
+
+## Zadatak
+
+- Kreirati klase za sve modele unutar core paketa.
+- Kreirati klase repozitorija za pohranu svih modela unutar .json datoteka. Naziv .json datoteke treba biti *naziv_modela.json*.
+- Kreirati servise za svaki model tako da servis poziva CRUD (Create, Read, Update, Delete) metode iz repozitorija. Kod inicijalizacije servisa, treba definirati da se koristi pohrana u .json datoteke.
+- Unutar GUI paketa kreirati izbornike i ovisno o izboru korisnika pozivati odgovarajuću metodu iz servisa kako bi se prikazao jedan ili lista entiteta. Isto virjedi i za brisanje i ažuriranje. Brisanje ne briše iz baze nego se koristi *soft delete*.
