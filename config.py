@@ -1,12 +1,11 @@
 import json
-from .constants import ROOT_FILE_PATH
+
 
 
 class AppConfig:
-    def __init__(self, file_path = ROOT_FILE_PATH):
-        self.file_path = file_path
+    def __init__(self, debug: bool, database_url: str, repo_type: str):
+        self.debug = debug
+        self.database_url = database_url
+        self.repo_type = repo_type
 
-    def load_config(self):
-        with open(self.file_path, 'r') as file_reader:
-            data = json.load(file_reader)
-            return data
+    

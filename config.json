@@ -1,3 +1,5 @@
 {
-    "file_path": "./data_store/files"
+    "debug": true,
+    "database_url": "sqlite:///pianos.db",
+    "repo_type": "file"
 }

@@ -2,9 +2,11 @@
 
 
 class PianoCategories:
-    pass
+    def __init__(self, category):
+        self.category = category
 
-
+    def __repr__(self):
+        return f'{self.category}'
 
 
     # ACOUSTIC = "acoustic"
