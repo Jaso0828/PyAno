@@ -1,11 +1,8 @@
-import json
 
 
+DATABASE_PATH = 'data_store/db/py_ano.db'
 
 class AppConfig:
-    def __init__(self, debug: bool, database_url: str, repo_type: str):
-        self.debug = debug
-        self.database_url = database_url
-        self.repo_type = repo_type
-
+    def __init__(self, db_path: str = DATABASE_PATH):
+       self.db_path = db_path
     
