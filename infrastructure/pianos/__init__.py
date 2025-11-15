@@ -1,1 +1,1 @@
-from .pianos_repository import PianoRepo
+from .piano_category_repo import PianoCategoryRepository

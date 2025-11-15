@@ -1,3 +1,3 @@
 from .pianos import Piano
-from .pianos import PianoCategories
+from .pianos import PianoCategory
 from .pianos import PianoType
