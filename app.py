@@ -35,6 +35,7 @@ def main():
                   piano_category=piano_cat_acustic,
                   piano_type=piano_type_grand)
     
+    
     # print("Piano prije DB", piano)
     piano = repo.piano_repo.add(piano)
     # print("Piano poslije DB", piano)
